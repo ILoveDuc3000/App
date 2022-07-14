@@ -2,6 +2,10 @@ import React from "react";
 import { ImageBackground, Text, View, TouchableOpacity } from "react-native";
 import { styles } from "./styles"
 
+import Appleicon from '../../Icons/Appel'
+import GgIcon from '../../Icons/GG'
+import Fbicon from "../../Icons/Fb"
+
 const image = { uri: "https://traderclass.vn/public/upload/images/course/thumb/94732711cf31016f5820.jpg" };
 
 const App = (props) => {
@@ -18,13 +22,22 @@ const App = (props) => {
             <Text style={styles.TextTouchableOpacity}>Sign In</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.Fb}>
-            <Text style={styles.TextTouchableOpacity}>Connect with Facebook</Text>
+            <View style={styles.viewIcon}>
+              <Fbicon style={{ marginRight: 10 }}/>
+              <Text style={styles.TextTouchableOpacity}>Connect with Facebook</Text>
+            </View>
           </TouchableOpacity>
           <TouchableOpacity style={styles.gg}>
-            <Text style={styles.TextTouchableOpacity}>Connect with Google</Text>
+          <View style={styles.viewIcon}>
+              <GgIcon style={{ marginRight: 10 }}/>
+              <Text style={styles.TextTouchableOpacity}>Connect with Google</Text>
+            </View>
           </TouchableOpacity>
           <TouchableOpacity style={styles.ap}>
-            <Text style={styles.TextTouchableOpacity}>Conect with Apple ID</Text>
+          <View style={styles.viewIcon}>
+              <Appleicon style={{ marginRight: 10 }}/>
+              <Text style={styles.TextTouchableOpacity}>Conect with Apple ID</Text>
+            </View>
           </TouchableOpacity>
         </View>
       </ImageBackground>
