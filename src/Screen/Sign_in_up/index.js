@@ -34,15 +34,17 @@ const App = (props) => {
             <Text style={styles.TextTouchableOpacity}>Sign In</Text>
           </TouchableOpacity>
           <View style={styles.haidongcuoi}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => props.navigation.navigate('Forgotpassword')}>
               <Text style={[styles.textTouch]}>
                 Forgot yout Password
               </Text>
             </TouchableOpacity>
             <View style={styles.viewTouchSignup}>
+            <TouchableOpacity >
               <Text style={styles.textDA}>
                 Don't have an account ? 
               </Text>
+              </TouchableOpacity>
               <TouchableOpacity onPress={() => props.navigation.navigate('StarScreen')}>
                 <Text style={styles.textSignup}>
                   Sign up now !
