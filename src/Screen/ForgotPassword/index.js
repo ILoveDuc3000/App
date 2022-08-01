@@ -1,5 +1,10 @@
 import React from 'react';
 import { styles } from "./styles"
+
+
+import Backicon from "../../Icons/Backicon"
+
+
 import {
   Text,
   View,
@@ -9,12 +14,17 @@ import {
   SafeAreaView,
 } from 'react-native';
 
+
+
 const image = { uri: "https://traderclass.vn/public/upload/images/course/thumb/94732711cf31016f5820.jpg" };
 const App = (props) => {
 
   return (
     <SafeAreaView style={styles.safeview}>
       <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+        <TouchableOpacity style={styles.iconstyle} onPress={() => props.navigation.navigate('Loign')}>
+          <Backicon/>
+        </TouchableOpacity> 
         <View style={styles.viewBot}>
           <View style={styles.tetxx}>
             <Text style={styles.Text1dong}>Forgot password</Text>
@@ -26,7 +36,7 @@ const App = (props) => {
             placeholderTextColor={'#FF8600'}>
           </TextInput>
           <TouchableOpacity style={styles.SignIn} onPress={() => props.navigation.navigate('Loign')}>
-            <Text style={styles.TextTouchableOpacity}>Sign In</Text>
+            <Text style={styles.TextTouchableOpacity}>Seen</Text>
           </TouchableOpacity>
           <View>
             <Text>

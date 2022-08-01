@@ -4,11 +4,17 @@ export const styles = StyleSheet.create({
   safeview: {
     flex: 1,
   },
+  iconstyle: {
+    marginLeft: 15,
+    Color: "#FF8600",
+    marginTop: 25,
+
+  },
   viewBot: {
-    borderTopLeftRadius: 30,
-    borderTopRightRadius: 30,
-    backgroundColor: '#171921',
-    padding: 20
+    justifyContent:'center',
+    flex:1,
+    marginLeft: 15,
+    marginRight: 15
   },
   tetxx: {
     marginLeft: 50,
